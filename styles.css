@@ -1,0 +1,160 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Protest+Revolution&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: url('boa.jpg') center center fixed; 
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  background:linear-gradient(to bottom, #ffd700, #fa5d02);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Protest Guerrilla';
+  font-size: 2rem;
+  margin-top: 40px;
+  padding-bottom: 150px;
+}
+
+
+
+.instrucao {
+  text-align: right;
+  color:greenyellow;
+  font-size: 1.2rem;
+}
+
+.conteudo {
+  
+  display: flex;
+  gap: 250px;
+  font-family: 'Protest Revolution';
+  
+}
+
+.container .caixa-texto,
+.container .caixa-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: 'Protest Revolution';
+
+  
+}
+
+.caixa-resultado{
+  margin-top: 43px;
+
+}
+
+textarea {
+  color: #ffb640;
+  font-size: 20px;
+  background-color: #0a619b;
+  opacity: 95%;
+  width: 500px;
+  height: 150px;
+  resize: none;
+  padding: 10px;
+  border: 2px solid greenyellow;
+  border-radius: 5px;
+
+}
+
+
+
+button {
+  font-size: 15px;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  background-color: #f39c12; 
+  color: rgb(166, 255, 0);
+  border:none;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  font-family: 'Protest Revolution';
+  margin-right: 120px;
+}
+
+button:hover {
+  background-color: #e67e22; 
+}
+
+.copy-button {
+  margin-left: 155px;
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  background-color: green; 
+  color:#f39c12;
+  border: none;
+  border-radius: 100px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+  background-color:green;
+}
+
+
+
+
+
+footer {
+  margin-top: auto;
+  font-family: 'Protest Revolution';
+  color: #fff;
+}
+
+footer p {
+  text-shadow: 1px 1px #000000; 
+  font-size: 1.2rem;
+}
+
+
+footer a {
+  color:#f39c12;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .conteudo {
+    gap: 10px;
+  }
+
+  textarea,
+  button,
+  .copy-button {
+    width: 100%;
+  }
+}
+ 
+

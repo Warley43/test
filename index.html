@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Desafio Criptografia</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="titulo">
+            <h1>Olá Player, Bem-Vindo ao Decodificador</h1>
+        </div>
+
+        <div class="conteudo">
+            <div class="caixa-texto">
+                <p class="instrucao">Apenas letras minúsculas e sem acentos devem ser utilizadas.</p>
+                <textarea id="inputText" placeholder="Digite a mensagem que você deseja criptografar ou descriptografar"></textarea>
+                <div class="buttons">
+                    <button id="butaocriptografar">Criptografar</button>
+                    <button id="butaodescriptografar">Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="caixa-resultado">
+                
+                <textarea id="outputText" placeholder="Nenhuma Mensagem Encontrada..." readonly></textarea>
+                <button id="copyButton" class="copy-button">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Warley. Encontre-me no <a href="https://www.linkedin.com/in/warley-souza-494766232/" target="_blank">LinkedIn</a> e no <a href="URL_DO_SEU_GITHUB" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
